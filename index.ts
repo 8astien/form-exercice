@@ -1,6 +1,6 @@
 import { PRISMA }from './config/database/prisma';
 import express from 'express';
-import  openRoutes  from './routes/public/openRoutes'
+import openRoutes  from './routes/public/openRoutes'
 import cors from 'cors';
 import bodyParser from 'body-parser';
 

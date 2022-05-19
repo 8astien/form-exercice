@@ -9,7 +9,7 @@ function openRoutes(app:Express) {
     })
 
     app.post('/user/create', (req: Request, res: Response) => {
-        // console.log(req.body)
+         console.log(req.body)
         userCreate(req, res)
     })
 }
