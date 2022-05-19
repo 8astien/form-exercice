@@ -3,7 +3,9 @@ import {createUserPrisma} from '../services/users'
 
 export async function userCreate(req: Request, res: Response) {
     try{
-        await createUserPrisma()
+        // console.log(req.body)
+        // On récupere le body (data: {user : name : machin, email: machin}) du post qu'on met en paramètre de notre fonction
+        await createUserPrisma(req.body)
         res.status(200).send({
             'message' : 'User created ! 😁'
         })

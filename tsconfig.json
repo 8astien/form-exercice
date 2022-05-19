@@ -1,9 +1,10 @@
 {
-    "compilerOptions": {
-      "sourceMap": true,
-      "outDir": "dist",
-      "strict": true,
-      "lib": ["esnext"],
-      "esModuleInterop": true
-    }
+  "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "lib": ["es2021", "dom"],
+    "esModuleInterop": true
   }
+}
+// ajout de ["es2021", "dom"] pour permettre le fetch en Typescript
